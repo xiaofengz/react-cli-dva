@@ -1,5 +1,5 @@
 # react-app
-react脚手架，可能比官方的简单一点
+react脚手架，react+redux+react-router2可能比官方的简单一点
 
 # 启动 Setup
 
