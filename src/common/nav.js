@@ -18,17 +18,17 @@ export const getNavData = app => [
           {
             name: 'Dashboard',
             icon: 'dashboard',
-            path: 'dashboard',
+            path: 'page',
             children: [
               {
                 name: '分析页',
                 path: 'component1',
-                component: dynamicWrapper(app, ['model1'], () => import('../routes/Page1/Component1')),
+                component: dynamicWrapper(app, () => import('../routes/Page1/Component1')),
               },
               {
                 name: '监控页',
                 path: 'component2',
-                component: dynamicWrapper(app, ['model3'], () => import('../routes/Page1/Component2')),
+                component: dynamicWrapper(app, () => import('../routes/Page1/Component2')),
               }
             ],
           }]
