@@ -28,7 +28,7 @@ export const getNavData = app => [
               {
                 name: '监控页',
                 path: 'component2',
-                component: dynamicWrapper(app, () => import('../routes/Page1/Component2')),
+                component: dynamicWrapper(app, () => import('../routes/Page1/index')),
               }
             ],
           }]

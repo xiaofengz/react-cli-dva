@@ -1,17 +1,5 @@
-import React, { Component } from 'react';
+import * as React from "react";
 
-export class Component2 extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( 
-            <div>
-                component2
-            </div>
-         )
-    }
-}
- 
-export default Component2;
+export interface HelloProps { compiler: string; framework: string; }
+
+export const Hello = (props: HelloProps) => <h1>Hello from {props.compiler} and {props.framework}!</h1>;

@@ -40,8 +40,8 @@ module.exports = {
                 test: /\.(js|jsx|tsx)$/,
                 exclude: /node_modules/,
                 use: [
-                    "babel-loader"
-                ]
+                    "babel-loader",
+                ],
             },
             {
                 test: /\.css$/,
@@ -64,7 +64,7 @@ module.exports = {
                     name: 'img/[name]-[hash:6].[ext]'
                 }
             }
-        ]
+        ],
     },
     plugins: [
         new ExtractTextPlugin('[name].css')
