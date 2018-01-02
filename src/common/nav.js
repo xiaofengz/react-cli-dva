@@ -1,16 +1,16 @@
 import dynamic from 'dva/dynamic';
 
 // wrapper of dynamic
-const dynamicWrapper = (app, models, component) => dynamic({
+const dynamicWrapper = (app, component) => dynamic({
   app,
-  models: () => models.map(m => import(`../models/${m}.js`)),
+  // models: () => models.map(m => import(`../models/${m}.js`)),
   component,
 });
 
 
 export const getNavData = app => [
     {
-        component: dynamicWrapper(app, ['model1', 'model2'], () => import('../layouts/BasicLayout')),
+        component: dynamicWrapper(app, () => import('../layouts/BasicLayout')),
         layout: 'BasicLayout',
         name: '首页', // for breadcrumb
         path: '/',
