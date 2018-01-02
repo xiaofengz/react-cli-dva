@@ -8,7 +8,7 @@ react脚手架，webpack/dva(react-router4)参考的ant design pro
 ├── src                         生产目录
     |—— assets                  静态资源
     |—— common                  路由按需加载，路由结构   
-    |—— components              业务组件，公共组件
+    |—— components              业务组件，公共组件(没有单独的路由配置,可能是纯静态的，也可能包含自己的 state，但不涉及 dva 的数据流，仅受父组件传递                                                  的参数控制)
     |—— layouts                 不同布局入口组件
     |—— less                    公共less
     |—— models                  dva models   
