@@ -26,8 +26,9 @@ react脚手架，webpack/dva(react-router4)参考的ant design pro
 
 ```
 # 启动 Setup
-
-    npm install
+    git clone https://github.com/xiaofengz/react-cli-dva.git
+    
+    npm install/cnpm i
 
     npm run dev
 
